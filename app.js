@@ -1,11 +1,17 @@
+/*jslint node: true */
+/*jslint browser: true*/
+/*global angular */
+
+'use strict';
+
 var app = angular.module("AngularApp", []);
 
-app.controller("mainController", function($scope, $timeout){
+app.controller("mainController", function ($scope, $timeout) {
     $scope.name = "Mukhammad Karimov";
     $scope.clock = {};
-    var updateClock = function() {
+    var updateClock = function () {
         $scope.clock.now = new Date();
-        $timeout(function(){
+        $timeout(function () {
             updateClock();
         }, 1000);
     };
