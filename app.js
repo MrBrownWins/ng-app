@@ -1,7 +1,7 @@
 var app = angular.module("AngularApp", []);
 
 app.controller("mainController", function($scope, $http){
-    $scope.name = "I am coming from controller";
+    $scope.name = "Mukhammad Karimov";
     console.log($scope);
     console.log($http);
 });
